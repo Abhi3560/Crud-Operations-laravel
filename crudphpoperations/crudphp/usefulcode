@@ -1,0 +1,58 @@
+
+<td><image src="images/th.jpg"/ height=100,width=100></td>
+
+    if (isset($_POST["file"])){
+        $file = addslashes($_POST["file"]);
+        echo "Yes<br>";  
+    }
+    elseif(empty($_POST['file'])){
+        $file = "default-avatar.jpeg";
+        echo "No<br>";  
+    }
+
+
+
+    <script>
+  function myFunction() {
+    var x;
+    if (confirm("Are you want to delete ?!") == true) {
+       return true;
+    } else {
+       return false;
+    }
+}
+
+
+<a class"btn btn-danger" onclick="return myFunction()" href="delete.php?deleteid='.$id.'">Delete</a>
+
+
+,
+      submitHandler: function (form) {
+        swal("Data inserted sucessfully",);
+        form.submit();
+      }
+
+
+      echo '<pre>';
+    var_dump($image_edit);exit();
+
+
+
+    $imagefilename=rand(0000,9999).$image['name'];
+        //print_r($imagefilename);
+        $imagefileerror=$image['error'];
+        $imagefiletemp=$image['tmp_name'];
+        $filename_separate=explode('.',$imagefilename);
+        $file_extension=strtolower(end($filename_separate));
+        //print_r($file_extension);
+        $extension=array('jpeg','jpg','png');
+        if(in_array($file_extension,$extension)){
+        $upload_image='images/'.$imagefilename;
+         move_uploaded_file($imagefiletemp,$upload_image);
+        
+        
+        if(!empty($_FILES['uploadimage']['edit_image'])){
+
+        }, `edit_image` = '$upload_image'
+
+        `image` = '$upload_image'
